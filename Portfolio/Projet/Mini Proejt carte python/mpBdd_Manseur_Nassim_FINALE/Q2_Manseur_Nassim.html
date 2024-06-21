@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_ed4dfdc315e146e0b302e8cb89deae8b {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_ed4dfdc315e146e0b302e8cb89deae8b" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_ed4dfdc315e146e0b302e8cb89deae8b = L.map(
+        'map_ed4dfdc315e146e0b302e8cb89deae8b', {
+        center: [49.26667, 2.46667],
+        zoom: 15,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_b6cfa579f0934e1bac66d896fa295a0e = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+    
+        var marker_e449075a5acf4d72954f052a50eef5d6 = L.marker(
+            [48.86, 2.34445],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_d3026aae8e3140879daa5bb4598b9435 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eb39848e989143f192d850c779ad7ccd = $(`<div id="html_eb39848e989143f192d850c779ad7ccd" style="width: 100.0%; height: 100.0%;">paris</div>`)[0];
+                popup_d3026aae8e3140879daa5bb4598b9435.setContent(html_eb39848e989143f192d850c779ad7ccd);
+            
+
+            marker_e449075a5acf4d72954f052a50eef5d6.bindPopup(popup_d3026aae8e3140879daa5bb4598b9435)
+            ;
+
+            
+        
+    
+        var marker_bedd152653a941f794ee26534b72edca = L.marker(
+            [43.2967, 5.37639],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_34ec57cae2e94adbb1d3a3ad422034f3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1bdee2af63cc47ccaef66e6c72debee2 = $(`<div id="html_1bdee2af63cc47ccaef66e6c72debee2" style="width: 100.0%; height: 100.0%;">marseille</div>`)[0];
+                popup_34ec57cae2e94adbb1d3a3ad422034f3.setContent(html_1bdee2af63cc47ccaef66e6c72debee2);
+            
+
+            marker_bedd152653a941f794ee26534b72edca.bindPopup(popup_34ec57cae2e94adbb1d3a3ad422034f3)
+            ;
+
+            
+        
+    
+        var marker_71fe50baa34046798a6d20e39dd4ec54 = L.marker(
+            [45.7589, 4.84139],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_ee5e6a2bb2ee4edb851347856e59d9a1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9b187f37dce74579a26542025fb916c6 = $(`<div id="html_9b187f37dce74579a26542025fb916c6" style="width: 100.0%; height: 100.0%;">lyon</div>`)[0];
+                popup_ee5e6a2bb2ee4edb851347856e59d9a1.setContent(html_9b187f37dce74579a26542025fb916c6);
+            
+
+            marker_71fe50baa34046798a6d20e39dd4ec54.bindPopup(popup_ee5e6a2bb2ee4edb851347856e59d9a1)
+            ;
+
+            
+        
+    
+        var marker_693929ad75064978bb253f6ebecdbbb4 = L.marker(
+            [43.6, 1.43333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_bd93082ae47a4ac3ad0c5f2963fafaa6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ceccd597529d41a3bd0b32139461ce03 = $(`<div id="html_ceccd597529d41a3bd0b32139461ce03" style="width: 100.0%; height: 100.0%;">toulouse</div>`)[0];
+                popup_bd93082ae47a4ac3ad0c5f2963fafaa6.setContent(html_ceccd597529d41a3bd0b32139461ce03);
+            
+
+            marker_693929ad75064978bb253f6ebecdbbb4.bindPopup(popup_bd93082ae47a4ac3ad0c5f2963fafaa6)
+            ;
+
+            
+        
+    
+        var marker_fbd8e784906247a88c401ce51439f25d = L.marker(
+            [43.7, 7.25],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_50758be6d1a0403cb3e57215ec5abe35 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5d35efb26f0e4496b05a8ee3d08fc1c0 = $(`<div id="html_5d35efb26f0e4496b05a8ee3d08fc1c0" style="width: 100.0%; height: 100.0%;">nice</div>`)[0];
+                popup_50758be6d1a0403cb3e57215ec5abe35.setContent(html_5d35efb26f0e4496b05a8ee3d08fc1c0);
+            
+
+            marker_fbd8e784906247a88c401ce51439f25d.bindPopup(popup_50758be6d1a0403cb3e57215ec5abe35)
+            ;
+
+            
+        
+    
+        var marker_d1fbcc56c37f4589bdf9c8535d2e1327 = L.marker(
+            [47.2167, -1.55],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_9ad6da9cb31d463d86a4e2bac170f022 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_145f2c6531e541dcb083bd03c277cf3c = $(`<div id="html_145f2c6531e541dcb083bd03c277cf3c" style="width: 100.0%; height: 100.0%;">nantes</div>`)[0];
+                popup_9ad6da9cb31d463d86a4e2bac170f022.setContent(html_145f2c6531e541dcb083bd03c277cf3c);
+            
+
+            marker_d1fbcc56c37f4589bdf9c8535d2e1327.bindPopup(popup_9ad6da9cb31d463d86a4e2bac170f022)
+            ;
+
+            
+        
+    
+        var marker_a8a728ee992148ec832f26a3614abec6 = L.marker(
+            [48.5833, 7.75],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_2f673dcd02914c4586178400092d8b98 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a49800b4df464a7babe488b9ea7b275e = $(`<div id="html_a49800b4df464a7babe488b9ea7b275e" style="width: 100.0%; height: 100.0%;">strasbourg</div>`)[0];
+                popup_2f673dcd02914c4586178400092d8b98.setContent(html_a49800b4df464a7babe488b9ea7b275e);
+            
+
+            marker_a8a728ee992148ec832f26a3614abec6.bindPopup(popup_2f673dcd02914c4586178400092d8b98)
+            ;
+
+            
+        
+    
+        var marker_7cd28946809443c1a761c76946acf4e1 = L.marker(
+            [43.6, 3.88333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_553165d6c8b84d9692bba391be2a3b65 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2c217904b3ce4b93810b7ff3a67b0d75 = $(`<div id="html_2c217904b3ce4b93810b7ff3a67b0d75" style="width: 100.0%; height: 100.0%;">montpellier</div>`)[0];
+                popup_553165d6c8b84d9692bba391be2a3b65.setContent(html_2c217904b3ce4b93810b7ff3a67b0d75);
+            
+
+            marker_7cd28946809443c1a761c76946acf4e1.bindPopup(popup_553165d6c8b84d9692bba391be2a3b65)
+            ;
+
+            
+        
+    
+        var marker_2611bb4ac2ad447e9230aeac7f9a99e7 = L.marker(
+            [44.8333, -0.566667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_813e0860c0674fafaa93daf92707c519 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6298db622aaf43238f30c4124b465231 = $(`<div id="html_6298db622aaf43238f30c4124b465231" style="width: 100.0%; height: 100.0%;">bordeaux</div>`)[0];
+                popup_813e0860c0674fafaa93daf92707c519.setContent(html_6298db622aaf43238f30c4124b465231);
+            
+
+            marker_2611bb4ac2ad447e9230aeac7f9a99e7.bindPopup(popup_813e0860c0674fafaa93daf92707c519)
+            ;
+
+            
+        
+    
+        var marker_35ae422587ee4a57bc3ed49c90e63e8d = L.marker(
+            [50.6333, 3.06667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_8c1c8ae8a5494f249ca9f6e232acc6b8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ec09592907a2428b884da27d80aeaf98 = $(`<div id="html_ec09592907a2428b884da27d80aeaf98" style="width: 100.0%; height: 100.0%;">lille</div>`)[0];
+                popup_8c1c8ae8a5494f249ca9f6e232acc6b8.setContent(html_ec09592907a2428b884da27d80aeaf98);
+            
+
+            marker_35ae422587ee4a57bc3ed49c90e63e8d.bindPopup(popup_8c1c8ae8a5494f249ca9f6e232acc6b8)
+            ;
+
+            
+        
+    
+        var marker_fa8ddaa649934db6ba5fa5a38dfabcbe = L.marker(
+            [48.0833, -1.68333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_9517f7d53a1e4d61aca6a941ef11cfda = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d4c43e9154da43fdbe382f82a702d102 = $(`<div id="html_d4c43e9154da43fdbe382f82a702d102" style="width: 100.0%; height: 100.0%;">rennes</div>`)[0];
+                popup_9517f7d53a1e4d61aca6a941ef11cfda.setContent(html_d4c43e9154da43fdbe382f82a702d102);
+            
+
+            marker_fa8ddaa649934db6ba5fa5a38dfabcbe.bindPopup(popup_9517f7d53a1e4d61aca6a941ef11cfda)
+            ;
+
+            
+        
+    
+        var marker_18a1cb4442f443878ddf1a3bc1a2db1a = L.marker(
+            [49.25, 4.03333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_5702cb93eb56443d99c37abff6d1ec5b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4ba76c61b2ae44f4b890e1fd5225541e = $(`<div id="html_4ba76c61b2ae44f4b890e1fd5225541e" style="width: 100.0%; height: 100.0%;">reims</div>`)[0];
+                popup_5702cb93eb56443d99c37abff6d1ec5b.setContent(html_4ba76c61b2ae44f4b890e1fd5225541e);
+            
+
+            marker_18a1cb4442f443878ddf1a3bc1a2db1a.bindPopup(popup_5702cb93eb56443d99c37abff6d1ec5b)
+            ;
+
+            
+        
+    
+        var marker_a9cebc84aca748a1af5c6bbd71617d14 = L.marker(
+            [49.5, 0.133333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_a38930e35fa0461fb25924689d2a9d5d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d630dcfebac640f6a9af73e2511b0122 = $(`<div id="html_d630dcfebac640f6a9af73e2511b0122" style="width: 100.0%; height: 100.0%;">le havre</div>`)[0];
+                popup_a38930e35fa0461fb25924689d2a9d5d.setContent(html_d630dcfebac640f6a9af73e2511b0122);
+            
+
+            marker_a9cebc84aca748a1af5c6bbd71617d14.bindPopup(popup_a38930e35fa0461fb25924689d2a9d5d)
+            ;
+
+            
+        
+    
+        var marker_36e08705368a47b48eb9c07e8eb41f14 = L.marker(
+            [45.4333, 4.4],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_89678190b92e44058abb92ad50f5d8e3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_71a841bcb1be4124b9f92f247897b288 = $(`<div id="html_71a841bcb1be4124b9f92f247897b288" style="width: 100.0%; height: 100.0%;">saint etienne</div>`)[0];
+                popup_89678190b92e44058abb92ad50f5d8e3.setContent(html_71a841bcb1be4124b9f92f247897b288);
+            
+
+            marker_36e08705368a47b48eb9c07e8eb41f14.bindPopup(popup_89678190b92e44058abb92ad50f5d8e3)
+            ;
+
+            
+        
+    
+        var marker_8fb9b4389f3b4eacb6dc67de0540a5da = L.marker(
+            [43.1167, 5.93333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_9a434293ded34744a52a6acabc5bd946 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0c228978f52149a5afd50c944ab327bb = $(`<div id="html_0c228978f52149a5afd50c944ab327bb" style="width: 100.0%; height: 100.0%;">toulon</div>`)[0];
+                popup_9a434293ded34744a52a6acabc5bd946.setContent(html_0c228978f52149a5afd50c944ab327bb);
+            
+
+            marker_8fb9b4389f3b4eacb6dc67de0540a5da.bindPopup(popup_9a434293ded34744a52a6acabc5bd946)
+            ;
+
+            
+        
+    
+        var marker_bdbd332b9abe45a6883b03ff69252e8a = L.marker(
+            [45.1667, 5.71667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_caa647b3e9bc46d3b98b5a254d7cfe1b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6b4a264b14d143e1864835840882ed3d = $(`<div id="html_6b4a264b14d143e1864835840882ed3d" style="width: 100.0%; height: 100.0%;">grenoble</div>`)[0];
+                popup_caa647b3e9bc46d3b98b5a254d7cfe1b.setContent(html_6b4a264b14d143e1864835840882ed3d);
+            
+
+            marker_bdbd332b9abe45a6883b03ff69252e8a.bindPopup(popup_caa647b3e9bc46d3b98b5a254d7cfe1b)
+            ;
+
+            
+        
+    
+        var marker_d2ac86d5eed34c00a24e77b50e21b55b = L.marker(
+            [47.3167, 5.01667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_5eb160f7d77f41d781c0dd89852c5208 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_64d96495b2574171980a97b85ac56e10 = $(`<div id="html_64d96495b2574171980a97b85ac56e10" style="width: 100.0%; height: 100.0%;">dijon</div>`)[0];
+                popup_5eb160f7d77f41d781c0dd89852c5208.setContent(html_64d96495b2574171980a97b85ac56e10);
+            
+
+            marker_d2ac86d5eed34c00a24e77b50e21b55b.bindPopup(popup_5eb160f7d77f41d781c0dd89852c5208)
+            ;
+
+            
+        
+    
+        var marker_d1d638424faa4f2a972c2eafbde60518 = L.marker(
+            [47.4667, -0.55],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_5270d8f4267c4e4e9b39222d5815416b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_718f1175471148b4b9fa947edd98213e = $(`<div id="html_718f1175471148b4b9fa947edd98213e" style="width: 100.0%; height: 100.0%;">angers</div>`)[0];
+                popup_5270d8f4267c4e4e9b39222d5815416b.setContent(html_718f1175471148b4b9fa947edd98213e);
+            
+
+            marker_d1d638424faa4f2a972c2eafbde60518.bindPopup(popup_5270d8f4267c4e4e9b39222d5815416b)
+            ;
+
+            
+        
+    
+        var marker_e99928f2fa9142cbbfb5cb082937e3f4 = L.marker(
+            [1.71819, 46.7107],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_18e972e745134d64baec1447d083429c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f7984b9419d441cda7022325428f7237 = $(`<div id="html_f7984b9419d441cda7022325428f7237" style="width: 100.0%; height: 100.0%;">ste clotilde</div>`)[0];
+                popup_18e972e745134d64baec1447d083429c.setContent(html_f7984b9419d441cda7022325428f7237);
+            
+
+            marker_e99928f2fa9142cbbfb5cb082937e3f4.bindPopup(popup_18e972e745134d64baec1447d083429c)
+            ;
+
+            
+        
+    
+        var marker_5b094e29f9744d379bb8810ca8c4a058 = L.marker(
+            [48.0, 0.2],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_ed4dfdc315e146e0b302e8cb89deae8b);
+        
+    
+            var popup_b71d19cfd31b4c27b03e83637759af96 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_774e4885ae904cd19ebcdb20b43f5eef = $(`<div id="html_774e4885ae904cd19ebcdb20b43f5eef" style="width: 100.0%; height: 100.0%;">le mans</div>`)[0];
+                popup_b71d19cfd31b4c27b03e83637759af96.setContent(html_774e4885ae904cd19ebcdb20b43f5eef);
+            
+
+            marker_5b094e29f9744d379bb8810ca8c4a058.bindPopup(popup_b71d19cfd31b4c27b03e83637759af96)
+            ;
+
+            
+        
+</script>
